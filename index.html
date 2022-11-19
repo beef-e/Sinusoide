@@ -56,12 +56,42 @@
 					<input
 						type="range"
 						name="fase"
-						min="0.1"
+						min="0"
 						max="1"
-						value="0.5"
+						value="0"
 						step="0.1" />
 				</div>
 			</form>
+		</div>
+
+		<button id="resetBTN">Reset</button>
+
+		<div class="info flex">
+			<input
+				type="color"
+				value="#ff0000"
+				id="redex" />
+			<span class="infoLabel whiteText">Seno</span>
+
+			<input
+				type="color"
+				value="#008000"
+				id="greenex" />
+			<span class="infoLabel whiteText">Coseno</span>
+
+			<div class="CanvasDimensionsWrapper">
+				<input
+					type="number"
+					name="width"
+					id="width"
+					value="400" />
+				<span class="whiteText">&times;</span>
+				<input
+					type="number"
+					name="height"
+					id="height"
+					value="400" />
+			</div>
 		</div>
 
 		<script
@@ -70,5 +100,9 @@
 		<script
 			type="text/javascript"
 			src="static\js\sinusoide.js"></script>
+
+		<script
+			type="text/javascript"
+			src="static/js/extra.js"></script>
 	</body>
 </html>
