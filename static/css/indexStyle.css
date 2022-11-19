@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1e1e1e;
+}
+
+.whiteText {
+	color: white;
+}
+
+.flex {
+	display: flex;
+}
+
+.formWrapper {
+	margin-top: 2.653vh;
+	margin-bottom: 2.653vh;
+}
+
+div.formWrapper form {
+	flex-direction: column;
+}
+
+div.formWrapper form div:nth-child(2).sliderWrapper {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
