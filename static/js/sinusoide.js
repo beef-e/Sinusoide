@@ -14,13 +14,13 @@ function resetting() {
 	background(220);
 	stroke(0, 0, 0);
 	strokeWeight(1);
-	line(0, w / 2, w, w / 2);
+	line(0, h / 2, w, h / 2);
 }
 
 function setup() {
 	createCanvas(w, h);
 	background(220);
-	line(0, w / 2, w, w / 2);
+	line(0, h / 2, w, h / 2);
 	//frameRate(100);
 }
 
@@ -30,9 +30,9 @@ function draw() {
 	let ycos = ampiezza * cos(2 * PI * frequenza * angle + fase);
 	strokeWeight(3);
 	stroke(`${colorSin}`);
-	point(x, y + w / 2);
+	point(x, y + h / 2);
 	stroke(`${colorCos}`);
-	point(x, ycos + w / 2);
+	point(x, ycos + h / 2);
 	angle = angle + increment;
 
 	if (x >= w) {

@@ -29,6 +29,8 @@ coseno.addEventListener("input", function (e) {
 
 let larghezza = document.querySelector("#width");
 let altezza = document.querySelector("#height");
+w = parseInt(larghezza.value);
+h = parseInt(altezza.value);
 
 larghezza.addEventListener("input", function (e) {
 	resetting();
@@ -41,3 +43,9 @@ altezza.addEventListener("input", function (e) {
 	h = parseInt(altezza.value);
 	setup();
 });
+
+/*let canvas = document.querySelector("#defaultCanvas0");
+
+canvas.addEventListener("onresize", function (e) {
+	larghezza.value = canvas.style.width.value;
+});*/

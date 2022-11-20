@@ -6,6 +6,11 @@
 
 body {
 	background-color: #1e1e1e;
+	width: 100vw;
+}
+
+main {
+	width: 100vw;
 }
 
 .whiteText {
@@ -18,15 +23,23 @@ body {
 
 .formWrapper {
 	padding-top: 2.653vh;
-	padding-bottom: 20px;
+	padding-bottom: 2.653vh;
 	margin-bottom: 2.653vh;
-	padding-left: 10px;
+	padding-left: 1.327vh;
 }
 /*todo SISTEMA TUTTE LE MISURE IN VIEWPORT O %*/
 canvas {
+	/*!NON FUNGE, DEVE RESIZE ANCHE IL CANVAS MA NON FUNGE
 	/*margin-left: 10px;*/
-	margin-left: 568px; /*? Da fare dinamico con le VU */
-	margin-right: 568px; /*? Da fare dinamico con le VU */
+	margin-left: 36.979vw; /*? Da fare dinamico con le VU */
+	margin-right: 36.979vw; /*? Da fare dinamico con le VU */
+	/*width: 26.0416666vw !important;
+	height: 53.07855626326964vh !important;*/
+}
+
+.sliderWrapper {
+	flex-basis: 33.3%;
+	text-align: center;
 }
 
 div.formWrapper form {
@@ -37,34 +50,38 @@ div.formWrapper {
 	background-color: rgb(110, 110, 110);
 }
 
-div.formWrapper form div:nth-child(2).sliderWrapper {
-	/*margin-top: 2vh;
-	margin-bottom: 2vh;*/
-}
+/*div.formWrapper form div:nth-child(2).sliderWrapper {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}*/
 
 #resetBTN {
-	margin-left: 10px;
+	margin-left: 0.651vw;
 	margin-bottom: 2vh;
 }
 
 #redex {
 	background-color: #ff0000;
-	width: 15px;
-	height: 15px;
-	margin-left: 10px;
-	margin-right: 10px;
+	width: 0.9765vw;
+	min-width: 15px;
+	height: 1.99vh;
+	min-height: 15px;
+	margin-left: 0.651vw;
+	margin-right: 0.651vw;
 }
 
 #greenex {
 	background-color: #008000;
-	width: 15px;
-	height: 15px;
-	margin-left: 30px;
-	margin-right: 10px;
+	width: 0.9765vw;
+	min-width: 15px;
+	height: 1.99vh;
+	min-height: 15px;
+	margin-left: 1.953vw;
+	margin-right: 0.651vw;
 }
 
 .CanvasDimensionsWrapper {
-	margin-left: 50px;
+	margin-left: 3.255vw;
 }
 
 .CanvasDimensionsWrapper input {
@@ -76,5 +93,5 @@ div.formWrapper form div:nth-child(2).sliderWrapper {
 }
 
 .info {
-	margin-bottom: 5px;
+	margin-bottom: 0.663vw;
 }
