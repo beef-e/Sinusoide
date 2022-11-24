@@ -21,77 +21,109 @@ main {
 	display: flex;
 }
 
-.formWrapper {
-	padding-top: 2.653vh;
-	padding-bottom: 2.653vh;
-	margin-bottom: 2.653vh;
-	padding-left: 1.327vh;
-}
-/*todo SISTEMA TUTTE LE MISURE IN VIEWPORT O %*/
-canvas {
-	/*!NON FUNGE, DEVE RESIZE ANCHE IL CANVAS MA NON FUNGE
-	/*margin-left: 10px;*/
-	margin-left: 36.979vw; /*? Da fare dinamico con le VU */
-	margin-right: 36.979vw; /*? Da fare dinamico con le VU */
-	/*width: 26.0416666vw !important;
-	height: 53.07855626326964vh !important;*/
-}
+@media screen and (min-width: 768px) {
+	.sliderWrapper {
+		flex-basis: 33.3%;
+		text-align: center;
+	}
 
-.sliderWrapper {
-	flex-basis: 33.3%;
-	text-align: center;
-}
+	div.formWrapper form {
+		justify-content: space-around;
+	}
 
-div.formWrapper form {
-	justify-content: space-around;
-}
+	.formWrapper {
+		margin-top: 0.75vh;
+	}
 
-div.formWrapper {
-	background-color: rgb(110, 110, 110);
+	#resetBTN {
+		margin-left: 42.8385vw;
+		margin-right: 42.8385vw;
+		width: 14.2329vw;
+		height: 3.003vh;
+		min-height: 18px;
+		margin-top: 1.5015vh;
+	}
 }
 
-/*div.formWrapper form div:nth-child(2).sliderWrapper {
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-}*/
+@media screen and (min-width: 1240px) {
+	.formWrapper {
+		padding-top: 2.653vh;
+		padding-bottom: 2.653vh;
+		margin-bottom: 2.653vh;
+		padding-left: 1.327vh;
+	}
+	/*todo SISTEMA TUTTE LE MISURE IN VIEWPORT O %*/
+	canvas {
+		/*!NON FUNGE, DEVE RESIZE ANCHE IL CANVAS MA NON FUNGE
+		/*margin-left: 10px;*/
+		/*margin-left: 36.979vw; /*? Da fare dinamico con le VU */
+		/*margin-right: 36.979vw; /*? Da fare dinamico con le VU */
+		max-width: 100%;
+		/*width: 26.0416666vw !important;
+		height: 53.07855626326964vh !important;*/
+	}
 
-#resetBTN {
-	margin-left: 0.651vw;
-	margin-bottom: 2vh;
-}
+	#canvasDiv {
+		margin-left: 36.979vw;
+		margin-right: 36.979vw;
+	}
 
-#redex {
-	background-color: #ff0000;
-	width: 0.9765vw;
-	min-width: 15px;
-	height: 1.99vh;
-	min-height: 15px;
-	margin-left: 0.651vw;
-	margin-right: 0.651vw;
-}
+	.sliderWrapper {
+		flex-basis: 33.3%;
+		text-align: center;
+	}
 
-#greenex {
-	background-color: #008000;
-	width: 0.9765vw;
-	min-width: 15px;
-	height: 1.99vh;
-	min-height: 15px;
-	margin-left: 1.953vw;
-	margin-right: 0.651vw;
-}
+	div.formWrapper form {
+		justify-content: space-around;
+	}
 
-.CanvasDimensionsWrapper {
-	margin-left: 3.255vw;
-}
+	div.formWrapper {
+		background-color: rgb(110, 110, 110);
+	}
 
-.CanvasDimensionsWrapper input {
-	border-style: solid;
-	background-color: #1e1e1e;
-	color: white;
-	width: 55px;
-	font-family: "Times New Roman", Times, serif;
-}
+	/*div.formWrapper form div:nth-child(2).sliderWrapper {
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}*/
 
-.info {
-	margin-bottom: 0.663vw;
+	#resetBTN {
+		margin-left: 0.651vw;
+		margin-bottom: 2vh;
+	}
+
+	#redex {
+		background-color: #ff0000;
+		width: 0.9765vw;
+		min-width: 15px;
+		height: 1.99vh;
+		min-height: 15px;
+		margin-left: 0.651vw;
+		margin-right: 0.651vw;
+	}
+
+	#greenex {
+		background-color: #008000;
+		width: 0.9765vw;
+		min-width: 15px;
+		height: 1.99vh;
+		min-height: 15px;
+		margin-left: 1.953vw;
+		margin-right: 0.651vw;
+	}
+
+	.CanvasDimensionsWrapper {
+		margin-left: 3.255vw;
+	}
+
+	.CanvasDimensionsWrapper input {
+		border-style: solid;
+		background-color: #1e1e1e;
+		color: white;
+		width: 55px;
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	.info {
+		margin-bottom: 0.663vw;
+	}
 }

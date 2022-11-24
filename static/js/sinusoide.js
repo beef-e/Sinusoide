@@ -18,9 +18,10 @@ function resetting() {
 }
 
 function setup() {
-	createCanvas(w, h);
+	let canvas = createCanvas(w, h);
 	background(220);
 	line(0, h / 2, w, h / 2);
+	canvas.parent(`canvasDiv`);
 	//frameRate(100);
 }
 
@@ -40,22 +41,22 @@ function draw() {
 	}
 }
 
-let amplitudeInput = document.querySelector("[name=amplitude]");
-let FrequencyInput = document.querySelector("[name=frequency]");
-let phaseInput = document.querySelector("[name=fase]");
+let amplitudeInput = document.querySelector('[name=amplitude]');
+let FrequencyInput = document.querySelector('[name=frequency]');
+let phaseInput = document.querySelector('[name=fase]');
 
-amplitudeInput.addEventListener("input", function (e) {
+amplitudeInput.addEventListener('input', function (e) {
 	//amplitudeInput = parseFloat(amplitudeInput);
 	ampiezza = parseFloat(amplitudeInput.value);
 	console.log(ampiezza);
 });
 
-FrequencyInput.addEventListener("input", function (e) {
+FrequencyInput.addEventListener('input', function (e) {
 	frequenza = parseFloat(FrequencyInput.value);
 	console.log(frequenza);
 });
 
-phaseInput.addEventListener("input", function (e) {
+phaseInput.addEventListener('input', function (e) {
 	resetting();
 	fase = parseFloat(phaseInput.value);
 	console.log(fase);
