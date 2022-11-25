@@ -21,7 +21,17 @@ main {
 	display: flex;
 }
 
-@media screen and (min-width: 768px) {
+/********************************IMPORTANT********************************/
+/*******************!STILI GENERALI PER OGNI DIMENSIONE*******************/
+.CanvasDimensionsWrapper input {
+	border-style: solid;
+	background-color: #1e1e1e;
+	color: white;
+	height: 100%;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
 	.sliderWrapper {
 		flex-basis: 33.3%;
 		text-align: center;
@@ -43,9 +53,50 @@ main {
 		min-height: 18px;
 		margin-top: 1.5015vh;
 	}
+
+	.info.flex {
+		margin-top: 1.5015vh;
+	}
+
+	#redex {
+		background-color: #ff0000;
+	}
+
+	#greenex {
+		background-color: #008000;
+	}
+
+	.infoLabel {
+		display: flex;
+		align-items: center;
+	}
+
+	#greenex,
+	#redex,
+	.infoLabel {
+		flex-basis: 0.125%;
+		flex-grow: 2;
+	}
+
+	.CanvasDimensionsWrapper {
+		flex-basis: 50%;
+		text-align: center;
+	}
+
+	#canvasDiv {
+		margin-top: 3.003vh;
+		text-align: center;
+	}
 }
 
 @media screen and (min-width: 1240px) {
+	#resetBTN {
+		width: auto;
+		height: auto;
+		margin-top: 0;
+		margin-right: 0;
+	}
+
 	.formWrapper {
 		padding-top: 2.653vh;
 		padding-bottom: 2.653vh;
@@ -116,11 +167,7 @@ main {
 	}
 
 	.CanvasDimensionsWrapper input {
-		border-style: solid;
-		background-color: #1e1e1e;
-		color: white;
 		width: 55px;
-		font-family: 'Times New Roman', Times, serif;
 	}
 
 	.info {
