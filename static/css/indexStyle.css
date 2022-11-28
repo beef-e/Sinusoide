@@ -17,8 +17,20 @@ main {
 	color: white;
 }
 
+.redText {
+	color: red;
+}
+
 .flex {
 	display: flex;
+}
+
+.corsivo {
+	font-style: italic;
+}
+
+.grassetto {
+	font-weight: bold;
 }
 
 /********************************IMPORTANT********************************/
@@ -103,7 +115,7 @@ main {
 		margin-bottom: 2.653vh;
 		padding-left: 1.327vh;
 	}
-	/*todo SISTEMA TUTTE LE MISURE IN VIEWPORT O %*/
+
 	canvas {
 		/*!NON FUNGE, DEVE RESIZE ANCHE IL CANVAS MA NON FUNGE
 		/*margin-left: 10px;*/
@@ -172,5 +184,29 @@ main {
 
 	.info {
 		margin-bottom: 0.663vw;
+	}
+
+	main h2 {
+		text-align: center;
+		margin-bottom: 1.3269vh;
+	}
+
+	main section {
+		text-align: justify;
+	}
+
+	section {
+		margin-left: 19.9869vw;
+		margin-right: 19.9869vw;
+		margin-top: 2.6539vh; /*20px su desktop*/
+		font-size: 17px;
+	}
+
+	ul {
+		margin-left: 19.9869vw;
+		margin-right: 19.9869vw;
+		width: auto;
+		margin-top: 1.9904vh; /*15px su desktop*/
+		font-size: 17px;
 	}
 }
