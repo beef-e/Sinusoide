@@ -6,11 +6,10 @@
 
 body {
 	background-color: #1e1e1e;
-	width: 100vw;
 }
 
 main {
-	width: 100vw;
+	width: 100%;
 }
 
 .whiteText {
@@ -121,7 +120,7 @@ main {
 		/*margin-left: 10px;*/
 		/*margin-left: 36.979vw; /*? Da fare dinamico con le VU */
 		/*margin-right: 36.979vw; /*? Da fare dinamico con le VU */
-		max-width: 100%;
+		width: 100%;
 		/*width: 26.0416666vw !important;
 		height: 53.07855626326964vh !important;*/
 	}
